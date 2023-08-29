@@ -1,32 +1,38 @@
 {
     "name": "Wallet Kit",
     "logo": {
-      "light": "/logo/light.svg",
-      "dark": "/logo/dark.svg"
+      "light": "/images/logo/logo-light-mode.svg",
+      "dark": "/images/logo/logo-light-mode.svg"
     },
-    "favicon": "/favicon.png",
+    "favicon": "/images/logo/logo-light-mode.svg",
     "colors": {
-      "primary": "#",
-      "light": "#",
-      "dark": "#"
+      "primary": "#84449c",
+      "light": "#c487da",
+      "dark": "#84449c"
+    },
+    "feedback": {
+      "thumbsRating": true
+    },
+    "api": {
+      "baseUrl": "https://testnet.usewalletkit.com"
     },
     "topbarCtaButton": {
-      "name": "",
-      "url": ""
+      "name": "Login",
+      "url": "https://next-admin-dash.vercel.app/playground"
     },
     "topbarLinks": [
       {
-        "name": "",
-        "url": ""
+        "name": "Features",
+        "url": "https://www.walletkit.io/site/features"
       }
     ],
-    "anchors": [
+    "tabs": [
       {
-        "name": "",
-        "icon": "",
-        "url": ""
+          "name": "API Reference",
+          "url": "api-reference"
       }
-    ],
+  
+   ],
     "navigation": [
         {
             "group": "WalletKit",
@@ -102,11 +108,61 @@
             "pages": [
               "reference/buy-gas"
             ]
-          }        
+          },
+          {
+            "group": "Wallets",
+            "pages": [
+              "api-reference/create-wallet",
+              "api-reference/list-wallets"
+            ]
+          },
+          {
+            "group": "Transactions",
+            "pages": [
+              "api-reference/transaction-status-by-hash",
+              "api-reference/sign-and-send",
+              "api-reference/transaction-status-by-id"
+            ]
+          },
+          {
+            "group": "Tokens",
+            "pages": [
+              "api-reference/get-token",
+              "api-reference/list-token-balances",
+              "api-reference/create-token",
+              "api-reference/mint-token",
+              "api-reference/transfer-token",
+              "api-reference/batch-transfer-token"
+            ]
+          },
+          {
+            "group": "NFTs",
+            "pages": [
+              "api-reference/create-nft-collection",
+              "api-reference/upload-nft-image",
+              "api-reference/mint-nft",
+              "api-reference/transfer-nft",
+              "api-reference/get-nft-collection",
+              "api-reference/list-nft-collections",
+              "api-reference/list-nfts"
+            ]
+          },
+          {
+            "group": "Activity",
+            "pages": [
+              "api-reference/list-wallet-activity"
+            ]
+          },
+          {
+            "group": "Gas",
+            "pages": [
+              "api-reference/buy-gas"
+            ]
+          }                      
     ],
     "footerSocials":
       {
-          "twitter": "",
-          "linkedin": ""
+          "twitter": "https://twitter.com/walletkit",
+          "linkedin": "https://www.linkedin.com/company/walletkit"
       }
   }

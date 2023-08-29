@@ -7,9 +7,8 @@ WalletKit uses Basic Authentication to authenticate your requests. Broadly, this
 
 You can find the Project ID and API Secret on the API Keys page in your dashboard: [https://app.usewalletkit.com/api-keys](https://app.usewalletkit.com/api-keys).
 
-NodeJS
-
-`const projectID = "";
+```js NodeJS
+const projectID = "";
 const apiSecret = "";
 
 const wallets = await fetch("https://testnet.usewalletkit.com/wallets", {
@@ -21,6 +20,6 @@ const wallets = await fetch("https://testnet.usewalletkit.com/wallets", {
 }).then(r => r.json());
 
 console.log(wallets);
-`
+```
 
 You must ensure that the API Secret never leaves your servers and is never leaked. If you suspect any leaks, rotate it immediately on the API keys page in your dashboard.

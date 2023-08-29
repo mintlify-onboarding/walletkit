@@ -29,9 +29,8 @@ Make sure you do the following first:
 
 Use the [Create NFT Collection API](/reference/create-nft-collection) to create NFT collection.
 
-cURL
-
-`curl --request POST \
+```bash cURL
+curl --request POST \
      --url 'https://testnet.usewalletkit.com/nfts/collections' \
      --user <project id>:<api secret> \
      --data '
@@ -42,19 +41,18 @@ cURL
    "secret": "testnet-secret"
 }
 '
-`
+```
 
 Response will contain the created NFT collection `contract_address`, which is needed in mint API call
 
-JSON
-
-`{
+```json JSON
+{
   "contract_address": "0x2b0bbdfef86b1979f931317252fd4d73e506c1b1",
   "network": "Polygon",
   "status": "pending",
   "transaction_hash": "0x07c782dcba4cc90d22047f93dbe5f6ccdf66ab6628dae2eeb528114baa9d1399"
 }
-`
+```
 
 ### Upload NFT Image (Optional)
 
@@ -62,30 +60,27 @@ This step is optional if you already have the image hosted some where, and have 
 
 In the case where you would like to upload the image of NFT to be hosted on IPFS, use the [Upload NFT image API](/reference/nft-image-upload). 
 
-cURL
-
-`curl -X 'POST' \
+```bash cURL
+curl -X 'POST' \
   'https://testnet.usewalletkit.com/nfts/upload' \
   --user <project id>:<api secret> \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F file=@path/to/gold_membership.jpeg
-`
+```
 
 An IPFS url will be returned by the API.
 
-JSON
-
-`{"ipfs_url":"ipfs://bafybeies72zw3kxh3dmgsmwyh5th7wk4kovnodhahn32s3oruorihs7qua/gold_membership.jpeg"}
-`
+```json JSON
+{"ipfs_url":"ipfs://bafybeies72zw3kxh3dmgsmwyh5th7wk4kovnodhahn32s3oruorihs7qua/gold_membership.jpeg"}
+```
 
 ### Mint NFTs
 
 Let's say the wallet of the first traveler `Alice` who achieve Gold status is `0x976Cf57B7EE1D84E73BE9115457889d49a8A1335`, call [Mint NFT API](/reference/mint-nft) with the traveler's wallet as the `recipient`, and the NFT collection created in previous step as `contract_address`. Put the image url in the`metadata.image` field.
 
-cURL
-
-`curl --request POST \
+```bash cURL
+curl --request POST \
      --url 'https://testnet.usewalletkit.com/nfts/mint' \
      --user <project id>:<api secret> \
      --data '
@@ -101,10 +96,10 @@ cURL
    "secret": "testnet-secret"
 }
 '
-`
+```
 
 The above call mint an NFT out of the `Sky Airline Gold Member` NFT Collection to the Alice's wallet, now her status becomes GOLD!
 
-![collection show up in dashboard](/images/reference/50d50b2-screenshot.png)
-
-collection show up in dashboard
+<Frame caption="collection show up in dashboard">
+  <img src="/images/reference/50d50b2-screenshot.png" />
+</Frame>
