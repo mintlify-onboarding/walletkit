@@ -1,0 +1,112 @@
+{
+    "name": "Wallet Kit",
+    "logo": {
+      "light": "/logo/light.svg",
+      "dark": "/logo/dark.svg"
+    },
+    "favicon": "/favicon.png",
+    "colors": {
+      "primary": "#",
+      "light": "#",
+      "dark": "#"
+    },
+    "topbarCtaButton": {
+      "name": "",
+      "url": ""
+    },
+    "topbarLinks": [
+      {
+        "name": "",
+        "url": ""
+      }
+    ],
+    "anchors": [
+      {
+        "name": "",
+        "icon": "",
+        "url": ""
+      }
+    ],
+    "navigation": [
+        {
+            "group": "WalletKit",
+            "pages": [
+              "reference/getting-started-with-your-api",
+              "reference/architecture"
+            ]
+          },
+          {
+            "group": "Get started",
+            "pages": [
+              "reference/endpoints",
+              "reference/authentication"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "reference/rewards-loyalty-program",
+              "reference/relay",
+              "reference/webhooks",
+              "reference/automations",
+              "reference/how-to-mint-nfts",
+              "reference/pwa-with-simple-onboarding-on-base"
+            ]
+          },
+          {
+            "group": "Wallets",
+            "pages": [
+              "reference/create-wallet",
+              "reference/list-wallets"
+            ]
+          },
+          {
+            "group": "transactions",
+            "pages": [
+              "reference/get-transaction-status-by-hash",
+              "reference/sign-and-send",
+              "reference/get-transaction-status-by-id"
+            ]
+          },
+          {
+            "group": "Tokens",
+            "pages": [
+              "reference/get-token",
+              "reference/list-token-balances",
+              "reference/create-token",
+              "reference/mint-token",
+              "reference/transfer-token",
+              "reference/batch-transfer-token"
+            ]
+          },
+          {
+            "group": "NFTs",
+            "pages": [
+              "reference/create-nft-collection",
+              "reference/nft-image-upload",
+              "reference/mint-nft",
+              "reference/transfer-nft",
+              "reference/get-nft-collection",
+              "reference/list-nft-collections",
+              "reference/list-nfts"
+            ]
+          },
+          {
+            "group": "Activity",
+            "pages": [
+              "reference/list-wallet-activity"
+            ]
+          },
+          {
+            "group": "Gas",
+            "pages": [
+              "reference/buy-gas"
+            ]
+          }        
+    ],
+    "footerSocials":
+      {
+          "twitter": "",
+          "linkedin": ""
+      }
+  }
